@@ -1,0 +1,2 @@
+{"err":{"name":"MongoNetworkError","message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]"},"level":"error","message":"error connection to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-03-15T07:03:36.940Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-03-15T07:04:16.309Z"}

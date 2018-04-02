@@ -1,0 +1,32 @@
+{
+  "name": "node-spider",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "pm2": "NODE_ARGV_OPT=get_roll_article NODE_ARGV_3=5  pm2 start index.js",
+    "spider": "NODE_ARGV_OPT=get_roll_article NODE_ARGV_3=5  node scripts/spider.js",
+    "gen": "NODE_ARGV_OPT=generate_ids NODE_ARGV_3=0 NODE_ARGV_4=20 node scripts/spider.js",
+    "auto": "pm2 start webhook/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "~1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.15.5",
+    "github-webhook-handler": "^0.7.1",
+    "ioredis": "^3.2.2",
+    "moment": "^2.20.1",
+    "mongodb": "^3.0.1",
+    "mongoose": "^5.0.3",
+    "morgan": "~1.9.0",
+    "nodejieba": "^2.2.3",
+    "serve-favicon": "~2.4.5",
+    "string_decoder": "^1.0.3",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2"
+  }
+}

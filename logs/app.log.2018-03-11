@@ -1,0 +1,5 @@
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-03-11T14:03:21.123Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-03-11T14:04:00.258Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-03-11T14:06:51.404Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-03-11T14:06:55.445Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-03-11T14:14:44.230Z"}
