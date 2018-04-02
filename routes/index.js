@@ -16,7 +16,7 @@ router.get('/spiderProtocol', (req, res) => {
     },
     config: {
       contentList: {
-        url: 'https://localhost:3000/content',
+        url: 'https://localhost:2333/content',
         pageSizeLimit: 20, // 每页最大量
         frequencyLimit: 5, // 频率设置，并发限制
       }
@@ -29,8 +29,9 @@ router.get('/content', (req, res) => {
     const { pageSize, latestId } = req.query;
     const match = {};
     if(latestId) match._id = {
-      $gt1: latestId
+      $gt: latestId
     }
+    console.log(match)
     const articles = await Acticle.model
       .find(match)
       .sort({_id: 1})

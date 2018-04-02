@@ -2,3 +2,18 @@
 {"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T08:48:44.479Z"}
 {"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T08:52:35.643Z"}
 {"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T09:17:04.203Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T10:57:22.518Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T10:57:30.844Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T10:58:56.434Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:05:04.750Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:05:12.626Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:08:01.902Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:08:07.350Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:09:00.781Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:22:41.875Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:36:29.646Z"}
+{"err":{"name":"MongoNetworkError","message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]"},"level":"error","message":"error connection to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:54:37.535Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T11:55:31.777Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T12:02:57.525Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T12:04:46.727Z"}
+{"level":"info","message":"successfully connecting to db, uri: mongodb://localhost:27017/bilibili","timestamp":"2018-04-02T12:04:59.591Z"}

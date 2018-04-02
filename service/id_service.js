@@ -1,6 +1,6 @@
 const redis = require('./redis_service');
-const ACFUN_ID_SET_REDIS_KEY = 'acfun_id_set';
-const ACFUN_ARTICLE_GOT_ID_SET = 'acfun_gone_id_set';
+const ACFUN_ID_SET_REDIS_KEY = 'bilibili_id_set';
+const ACFUN_ARTICLE_GOT_ID_SET = 'bilibili_gone_id_set';
 const Cache_MAX = 1000;
 
 async function generateAcfunIdsToRedis (min, max) {
