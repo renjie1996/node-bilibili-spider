@@ -31,7 +31,6 @@ router.get('/content', (req, res) => {
     if(latestId) match._id = {
       $gt: latestId
     }
-    console.log(match)
     const articles = await Acticle.model
       .find(match)
       .sort({_id: 1})
