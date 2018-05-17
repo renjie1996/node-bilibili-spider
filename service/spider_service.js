@@ -95,7 +95,29 @@ async function generatorTags($, id, title) {
     tags.push(new Tag('Title_Extract', tag.word, tag.weight));
   }
   articleTagName && tags.push(new Tag('TAGNAME', articleTagName, 1));
-  return tags;
+  const recaculatedTags = [];
+  const titleExtracts = tags.filter(t => t.name === 'Title_Extract')
+    .sort((prev, next) => next.score - prev.score)
+    .map((e, i, a) => {
+      return {
+        name: e.name,
+        value: e.value,
+        score: e.score / a[0].score,
+      };
+    });
+
+  const tagNames = tags.filter(t => t.name === 'TAGNAME')
+    .map((t) => {
+      return {
+        name: t.name,
+        value: t.value,
+        score: 0.7,
+      };
+    });
+
+  recaculatedTags.push(...titleExtracts);
+  recaculatedTags.push(...tagNames);
+  return recaculatedTags;
 }
 
 function flattenContent(dom, $) {

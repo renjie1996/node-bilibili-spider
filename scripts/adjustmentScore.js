@@ -49,3 +49,7 @@ async function recalculateScore() {
       .updateOne({ _id: doc._id }, { $set: { tags: recaculatedTags } });
   }
 }
+
+module.exports = {
+  recalculateScore
+}

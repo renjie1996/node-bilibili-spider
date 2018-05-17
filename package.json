@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "nodemon ./bin/www",
     "pm2": "NODE_ARGV_OPT=get_roll_article NODE_ARGV_3=5  pm2 start index.js",
     "spider": "NODE_ARGV_OPT=get_roll_article NODE_ARGV_3=5  node scripts/spider.js",
     "gen": "NODE_ARGV_OPT=generate_ids NODE_ARGV_3=0 NODE_ARGV_4=20 node scripts/spider.js",

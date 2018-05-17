@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Acticle = require('../models/article');
+const Script = require('../scripts/adjustmentScore')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -26,6 +27,7 @@ router.get('/spiderProtocol', (req, res) => {
 
 router.get('/content', (req, res) => {
   (async () => {
+    // Script.recaculatedTags();
     const { pageSize, latestId } = req.query;
     const match = {};
     if(latestId) match._id = {
@@ -41,8 +43,10 @@ router.get('/content', (req, res) => {
         title: a.title,
         contentType: 'dom',
         content: {
-          html: a.articleContentHtml,
-          text: a.articleContent,
+          // sourceId: String,
+          html: a.content,
+          // createdAt: { type: Number },
+          // originCreatedAt: Number
         },
         tags: a.tags,
         contentId: a._id
